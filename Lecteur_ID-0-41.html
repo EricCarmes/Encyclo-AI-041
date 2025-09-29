@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-41-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - REDÉCOUVRIR LA PARESSE : UNE INVITATION À LA RÉFLEXION</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - LA PARESSE À TRAVERS L'HISTOIRE : UNE PERSPECTIVE ÉVOLUTIVE</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - Les origines antiques de la paresse</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - La paresse au Moyen Âge</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - La révolution industrielle et la stigmatisation de la paresse</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - LA PHILOSOPHIE DE LA PARESSE : ARISTOTE ET NIETZSCHE</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - Aristote et la contemplation comme activité supérieure</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Nietzsche et la critique de la tyrannie du travail</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - Synthèse des perspectives philosophiques</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - LA PARESSE COMME SOURCE DE CRÉATIVITÉ ET DE RÉFLEXION</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - La créativité dans l'oisiveté</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - L'ennui comme moteur de l'innovation</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - La réflexion personnelle et la construction de soi</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - LES EFFETS DU CAPITALISME SUR LA PERCEPTION DE LA PARESSE</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - La valorisation du travail dans les sociétés capitalistes</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - La productivité comme norme sociale</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - Résistance et alternatives au modèle capitaliste</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - LA PARESSE DANS DIFFÉRENTES CULTURES ET ÉPOQUES</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - Les pratiques de repos en Orient</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - Les rituels de repos dans les cultures occidentales</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - Comparaison interculturelle</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - PRATIQUES QUOTIDIENNES POUR INTÉGRER LA PARESSE</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - Instaurer des pauses régulières</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - Valoriser l'ennui comme source de créativité</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - Techniques de méditation et de pleine conscience</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - LA PARESSE ET LE BIEN-ÊTRE PERSONNEL</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - Les bienfaits psychologiques de la paresse</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - La paresse et la santé physique</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - Témoignages et études de cas</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - VERS UNE NOUVELLE PHILOSOPHIE DU TEMPS ET DE L'EXISTENCE</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - Repenser notre rapport au temps</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - La lenteur comme mode de vie</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - La paresse comme chemin vers l'épanouissement</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - VERS UNE RÉHABILITATION DE LA PARESSE</a></li>
+  </ul>
+
+  <p><a href="ID-0-41-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
